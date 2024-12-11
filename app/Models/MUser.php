@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class MUser extends Model
 {
+    public $timestamps = false; // Tambahkan ini untuk menonaktifkan timestamps
     protected $table = 'm_user';
     protected $primaryKey = 'id_user';
     protected $fillable = [
